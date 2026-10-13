@@ -1,0 +1,203 @@
+{
+  "storeName": "PawNest",
+  "products": [
+    {
+      "name": "Orthopedic Dog Bed",
+      "sku": "DOG-104",
+      "price": "3499.00",
+      "category": "Dog Beds",
+      "description": "Dog bed.",
+      "shortDescription": "",
+      "attributes": {
+        "Color": "Grey"
+      },
+      "kind": "dogbed",
+      "stock": 12
+    },
+    {
+      "name": "Rubber Chew Toy",
+      "sku": "DOG-210",
+      "price": "399.00",
+      "category": "Dog Toys",
+      "description": "A durable rubber chew toy for dogs that bounces unpredictably and helps keep them busy. Easy to rinse clean after play.",
+      "shortDescription": "Durable rubber chew toy.",
+      "attributes": {
+        "Material": "Natural rubber",
+        "Size": "Medium"
+      },
+      "kind": "dogtoy",
+      "stock": 3
+    },
+    {
+      "name": "Chicken & Rice Dog Food 3kg",
+      "sku": "DOG-301",
+      "price": "1299.00",
+      "category": "Dog Food",
+      "description": "",
+      "shortDescription": "Complete dry dog food.",
+      "attributes": {
+        "Weight": "3 kg"
+      },
+      "kind": "dogfood",
+      "stock": 0
+    },
+    {
+      "name": "Nylon Dog Leash 1.5m",
+      "sku": "DOG-415",
+      "price": "499.00",
+      "category": "Dog Gear",
+      "description": "Nylon leash.",
+      "shortDescription": "",
+      "attributes": {
+        "Material": "Nylon",
+        "Length": "1.5 m"
+      },
+      "kind": "leash",
+      "stock": 25
+    },
+    {
+      "name": "Paw Print Dog Bowl",
+      "sku": "DOG-522",
+      "price": "349.00",
+      "category": "Dog Gear",
+      "description": "A sturdy bowl for food or water with a paw print design. The wide base helps keep it from tipping and it is easy to wipe clean.",
+      "shortDescription": "Paw print dog bowl.",
+      "attributes": {
+        "Material": "Ceramic",
+        "Color": "Black"
+      },
+      "kind": "dogbowl",
+      "stock": 40
+    },
+    {
+      "name": "Rope Tug Toy",
+      "sku": "DOG-630",
+      "price": "299.00",
+      "category": "Dog Toys",
+      "description": "",
+      "shortDescription": "",
+      "attributes": {
+        "Color": "Red"
+      },
+      "kind": "rope",
+      "stock": 4
+    },
+    {
+      "name": "Cat Scratching Post",
+      "sku": "CAT-101",
+      "price": "1799.00",
+      "category": "Cat Furniture",
+      "description": "Scratching post.",
+      "shortDescription": "",
+      "attributes": {
+        "Material": "Sisal"
+      },
+      "kind": "scratchpost",
+      "stock": 8
+    },
+    {
+      "name": "Feather Wand Cat Toy",
+      "sku": "CAT-205",
+      "price": "249.00",
+      "category": "Cat Toys",
+      "description": "A lightweight wand with feathers on a flexible string that invites cats to chase, pounce and play. Great for interactive play sessions.",
+      "shortDescription": "Feather wand teaser toy.",
+      "attributes": {
+        "Material": "Feathers and plastic",
+        "Length": "60 cm"
+      },
+      "kind": "featherwand",
+      "stock": 60
+    },
+    {
+      "name": "Tuna Cat Food 400g",
+      "sku": "CAT-310",
+      "price": "199.00",
+      "category": "Cat Food",
+      "description": "Wet cat food with tuna.",
+      "shortDescription": "Tuna wet cat food.",
+      "attributes": {
+        "Weight": "400 g"
+      },
+      "kind": "catfood",
+      "stock": 2
+    },
+    {
+      "name": "Hooded Cat Litter Box",
+      "sku": "CAT-415",
+      "price": "2299.00",
+      "category": "Cat Care",
+      "description": "A hooded litter box that helps contain litter and odour. The roomy interior suits most adult cats and the lid lifts off for cleaning.",
+      "shortDescription": "Hooded litter box.",
+      "attributes": {
+        "Material": "Plastic",
+        "Color": "Grey"
+      },
+      "kind": "litterbox",
+      "stock": 15
+    },
+    {
+      "name": "Cat Window Bed",
+      "sku": "CAT-520",
+      "price": "1499.00",
+      "category": "Cat Furniture",
+      "description": "",
+      "shortDescription": "",
+      "attributes": {},
+      "kind": "catbed",
+      "stock": 0
+    },
+    {
+      "name": "Cat Collar with Bell",
+      "sku": "CAT-630",
+      "price": "249.00",
+      "category": "Cat Care",
+      "description": "Collar with a bell.",
+      "shortDescription": "Cat collar.",
+      "attributes": {
+        "Color": "Red"
+      },
+      "kind": "collar",
+      "stock": 30
+    },
+    {
+      "name": "Toy Mouse 3-Pack",
+      "sku": "CAT-705",
+      "price": "199.00",
+      "category": "Cat Toys",
+      "description": "Soft toy mice for cats to chase and bat around the house. Sold as a pack of three.",
+      "shortDescription": "Pack of three toy mice.",
+      "attributes": {
+        "Material": "Fabric",
+        "Quantity": "3"
+      },
+      "kind": "mousetoy",
+      "stock": 45
+    },
+    {
+      "name": "Pet Grooming Brush",
+      "sku": "",
+      "price": "",
+      "category": "",
+      "description": "",
+      "shortDescription": "",
+      "attributes": {},
+      "kind": "brush",
+      "stock": 6
+    },
+    {
+      "name": "Dental Chew Treats",
+      "sku": "DOG-740",
+      "price": "599.00",
+      "category": "Dog Food",
+      "description": "Bone-shaped chew treats made for dogs to enjoy between meals. Sold in a resealable pack for freshness.",
+      "shortDescription": "Dental chew treats.",
+      "attributes": {
+        "Material": "Chicken and rice flour",
+        "Weight": "200 g"
+      },
+      "kind": "dogtreats",
+      "stock": 18
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+node_modules
+dist
+.env
+server/.env.docker-woo
+
+# local data (SQLite database, mock store state, old JSON backups)
+server/data/

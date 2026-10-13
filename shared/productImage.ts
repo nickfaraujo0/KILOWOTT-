@@ -1,0 +1,18 @@
+// Generates simple illustrated product images (SVG) so demos work offline. These are illustrations, not photos.
+const bg = (a: string, b: string) => `<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><rect width="400" height="400" fill="url(#g)"/><ellipse cx="200" cy="352" rx="120" ry="12" fill="#0001"/>`;
+const ICONS: Record<string, [string, string, string]> = {
+  bag: ['#f3e6d0', '#e2c9a0', `<path d="M140 150c0-50 120-50 120 0" fill="none" stroke="#6b4f2a" stroke-width="14" stroke-linecap="round"/><rect x="105" y="140" width="190" height="200" rx="34" fill="#c9a66b"/><path d="M105 190h190v40H105z" fill="#b8924f"/><rect x="150" y="262" width="100" height="56" rx="12" fill="#b8924f" stroke="#8a6a35" stroke-width="5"/><rect x="190" y="198" width="20" height="26" rx="4" fill="#6b4f2a"/>`],
+  bottle: ['#dff1e6', '#b9dcc7', `<rect x="165" y="70" width="70" height="40" rx="10" fill="#2f4f3e"/><rect x="150" y="105" width="100" height="240" rx="30" fill="#3f8f64"/><rect x="150" y="190" width="100" height="26" fill="#2f6f4c"/><rect x="172" y="130" width="14" height="190" rx="7" fill="#fff4"/>`],
+  blanket: ['#efe9df', '#d9cfbf', `<rect x="80" y="170" width="240" height="150" rx="14" fill="#cdbfa5"/><rect x="80" y="170" width="240" height="40" rx="14" fill="#b9a98a"/><g stroke="#e9e0cf" stroke-width="6"><path d="M80 240h240M80 275h240"/></g><path d="M80 320v22M110 320v22M140 320v22M170 320v22M200 320v22M230 320v22M260 320v22M290 320v22M320 320v22" stroke="#cdbfa5" stroke-width="5"/>`],
+  beanie: ['#e8e6ee', '#cfcbdc', `<circle cx="200" cy="120" r="26" fill="#4a4a58"/><path d="M110 270c0-110 180-110 180 0z" fill="#5b5b6e"/><rect x="104" y="262" width="192" height="52" rx="16" fill="#4a4a58"/><g stroke="#fff3" stroke-width="5"><path d="M150 180v80M185 165v95M215 165v95M250 180v80"/></g>`],
+  mouse: ['#e3ecf7', '#c4d6ee', `<rect x="140" y="110" width="120" height="200" rx="60" fill="#2c3547"/><path d="M200 110v80" stroke="#8aa0c4" stroke-width="5"/><rect x="190" y="132" width="20" height="38" rx="10" fill="#8aa0c4"/><path d="M140 190h120" stroke="#8aa0c4" stroke-width="4"/>`],
+  jacket: ['#dde7f2', '#b6c8de', `<path d="M140 110l60 28 60-28 62 44-30 120-34-14v90H142v-90l-34 14-30-120z" fill="#274a78"/><path d="M200 138v226" stroke="#d6e3f5" stroke-width="6"/><path d="M168 118l32 40 32-40" fill="#1f3c61"/><rect x="152" y="250" width="34" height="8" rx="4" fill="#d6e3f533"/>`],
+  coffee: ['#f1e5da', '#dcc3ad', `<path d="M130 120h140l-30 80h-80z" fill="#e8e3da" stroke="#8a7766" stroke-width="6"/><rect x="170" y="200" width="60" height="14" fill="#8a7766"/><path d="M140 232h120v70a40 40 0 0 1-40 40h-40a40 40 0 0 1-40-40z" fill="#f7f3ec" stroke="#8a7766" stroke-width="6"/><path d="M260 250c34 0 34 44 0 44" fill="none" stroke="#8a7766" stroke-width="8"/>`],
+  socks: ['#eef2e4', '#d3dfba', `<path d="M110 90h60v150l60 60a30 30 0 0 1-30 50l-90-70z" fill="#6f8f4a"/><path d="M230 120h60v120l50 56a30 30 0 0 1-30 46l-80-60z" fill="#8fae69"/><rect x="110" y="90" width="60" height="26" fill="#566f38"/><rect x="230" y="120" width="60" height="26" fill="#6f8f4a"/>`],
+  generic: ['#ececec', '#d4d4d4', `<rect x="110" y="130" width="180" height="180" rx="20" fill="#9aa3ad"/><path d="M110 190h180" stroke="#fff6" stroke-width="6"/><rect x="170" y="150" width="60" height="24" rx="6" fill="#fff6"/>`],
+};
+export const imageKinds = Object.keys(ICONS);
+export function productSvg(kind: string): string {
+  const [a, b, body] = ICONS[kind] ?? ICONS.generic;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">${bg(a, b)}${body}</svg>`;
+}

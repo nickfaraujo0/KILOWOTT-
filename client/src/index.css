@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body { background: #f7f6f2; color: #14201a; font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; font-feature-settings: 'cv11', 'ss01'; }
+h1, h2, h3 { letter-spacing: -0.02em; }
+
+/* Flat surfaces: thin border, no shadow, no gradients */
+.card { background: #fff; border: 1px solid #e8e6df; border-radius: 1rem; }
+
+input:not([type=checkbox]), select, textarea { transition: border-color .15s, box-shadow .15s; }
+input:not([type=checkbox]):focus, select:focus, textarea:focus { outline: none; border-color: #059669; box-shadow: 0 0 0 3px rgb(5 150 105 / 0.15); }
+button:focus-visible, a:focus-visible { outline: 2px solid #059669; outline-offset: 2px; }
+tbody tr { transition: background-color .12s; }
+::selection { background: #a7f3d0; }
