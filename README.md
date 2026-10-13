@@ -6,6 +6,8 @@ A lightweight Product Information Management (PIM) tool for WooCommerce. It impo
 
 Built solo for a 4-hour hackathon (challenge **Option B: PIM System Integration with WooCommerce**), then extended into a full dashboard with a demo store.
 
+**Video walkthrough:** [watch the project videos on Google Drive](https://drive.google.com/drive/folders/1dqAhie9VCx_hmVcWBfhSjhecwPO-3iWj?usp=sharing) (the planning video and the result video).
+
 ## Contents
 
 1. [Context and goals](#context-and-goals)
